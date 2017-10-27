@@ -1,0 +1,11 @@
+D:\Projects\ModernWallet\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.deps.json
+D:\Projects\ModernWallet\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.runtimeconfig.json
+D:\Projects\ModernWallet\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.runtimeconfig.dev.json
+D:\Projects\ModernWallet\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.dll
+D:\Projects\ModernWallet\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.pdb
+D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.csprojResolveAssemblyReference.cache
+D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.csproj.CoreCompileInputs.cache
+D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.AssemblyInfoInputs.cache
+D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.AssemblyInfo.cs
+D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.dll
+D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.pdb
