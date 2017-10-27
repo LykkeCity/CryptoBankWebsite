@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <Folder Include="Storage\Feedbacks\" />
+    <Folder Include="Storage\Beta\" />
     <Folder Include="Storage\Newsletters\" />
   </ItemGroup>
 
