@@ -1,0 +1,64 @@
+$path-fonts: '../../fonts/';
+
+//@font-face {
+//  font-family: 'GeomanistBlack';
+//  src: url('#{$path-fonts}Geomanist-Black.otf') format('opentype');
+//  //font-weight: 400;
+//  font-style: normal;
+//}
+
+@font-face {
+  font-family: 'GeomanistBold';
+  src: url('#{$path-fonts}Geomanist-Bold.otf') format('opentype');
+  //font-weight: 500;
+  font-style: normal;
+}
+
+//@font-face {
+//  font-family: 'GeomanistBook';
+//  src: url('#{$path-fonts}Geomanist-Book.otf') format('opentype');
+//  //font-weight: 700;
+//  font-style: normal;
+//}
+
+//@font-face {
+//  font-family: 'GeomanistExtraLight';
+//  src: url('#{$path-fonts}Geomanist-ExtraLight.otf') format('opentype');
+//  //font-weight: 300;
+//  font-style: normal;
+//}
+
+@font-face {
+  font-family: 'GeomanistLight';
+  src: url('#{$path-fonts}Geomanist-Light.otf') format('opentype');
+  //font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeomanistMedium';
+  src: url('#{$path-fonts}Geomanist-Medium.otf') format('opentype');
+  //font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeomanistRegular';
+  src: url('#{$path-fonts}Geomanist-Regular.otf') format('opentype');
+  //font-weight: 500;
+  font-style: normal;
+}
+
+//@font-face {
+//  font-family: 'GeomanistThin';
+//  src: url('#{$path-fonts}Geomanist-Thin.otf') format('opentype');
+//  //font-weight: 700;
+//  font-style: normal;
+//}
+
+//@font-face {
+//  font-family: 'GeomanistUltra';
+//  src: url('#{$path-fonts}Geomanist-Ultra.otf') format('opentype');
+//  //font-weight: 300;
+//  font-style: normal;
+//}

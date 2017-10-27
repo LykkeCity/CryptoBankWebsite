@@ -1,0 +1,38 @@
+$lightblue: #05a8fc;
+$lightgray: #f5f6f7;
+$purple-blue-gradient: linear-gradient(266deg, #3dc6f3, #4c3494);
+
+$heading-color: #333;
+$text-color: #3f4d60;
+
+$input-border: #d1d1d1;
+
+$white: #fefefe;
+
+.lightblue-bg {
+  background: $lightblue;
+}
+
+.lightgray-bg {
+  background: $lightgray;
+}
+
+.purple-blue-bg {
+  background: $purple-blue-gradient;
+}
+
+.font-darkgray {
+  color: $heading-color;
+}
+
+.font-gray {
+  color: $text-color;
+}
+
+.font-white {
+  color: #fff;
+}
+
+.font-lightblue {
+  color: $lightblue;
+}

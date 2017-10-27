@@ -1,0 +1,6 @@
+/ModernWallet/bin
+/ModernWallet/wwwroot/.vscode
+/ModernWallet/wwwroot/node_modules
+/ModernWallet/wwwroot/dist
+/.vs
+/.idea

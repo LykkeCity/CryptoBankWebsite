@@ -7936,7 +7936,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
+      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
@@ -13099,7 +13099,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex Dojcinovic\\.nuget\\packages\\": {},
+    "C:\\Users\\stede\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13108,17 +13108,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Projects\\ModernWallet\\ModernWallet\\ModernWallet.csproj",
+      "projectUniqueName": "D:\\Projects\\Prime\\mw-landing\\ModernWallet\\ModernWallet.csproj",
       "projectName": "ModernWallet",
-      "projectPath": "D:\\Projects\\ModernWallet\\ModernWallet\\ModernWallet.csproj",
-      "packagesPath": "C:\\Users\\Alex Dojcinovic\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\ModernWallet\\ModernWallet\\obj\\",
+      "projectPath": "D:\\Projects\\Prime\\mw-landing\\ModernWallet\\ModernWallet.csproj",
+      "packagesPath": "C:\\Users\\stede\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Prime\\mw-landing\\ModernWallet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alex Dojcinovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\stede\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

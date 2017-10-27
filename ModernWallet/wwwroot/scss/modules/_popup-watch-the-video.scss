@@ -1,0 +1,7 @@
+#popup-watch-the-video {
+    
+        @include border-radius(10px);
+        @include popup-shadow;
+    
+        background: $white;
+}

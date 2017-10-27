@@ -1,0 +1,40 @@
+.img-wrapper {
+  text-align: center;
+}
+
+.img {
+  display: inline-block;
+  width: 100%;
+  
+  &.block {
+    display: block;
+  }
+
+  &.mw-70 {
+    max-width: 70px;
+  }
+
+  &.mw-97 {
+    max-width: 97px;
+  }
+
+  &.mw-200 {
+    max-width: 200px;
+  }
+
+  &.mw-300 {
+    max-width: 300px;
+  }
+
+  &.mw-400 {
+    max-width: 400px;
+  }
+
+  &.mw-500 {
+    max-width: 500px;
+  }
+
+  &.mw-600 {
+    max-width: 600px;
+  }
+}

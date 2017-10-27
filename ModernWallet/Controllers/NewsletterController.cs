@@ -11,7 +11,7 @@ namespace ModernWallet.Controllers
 
         public NewsletterController(IHostingEnvironment envrnmt):base(envrnmt){}
 
-        // POST api/email
+        // POST api/newsletter
         [HttpPost]
         public IActionResult Post([FromForm]NewsletterModel newsletter)
         {

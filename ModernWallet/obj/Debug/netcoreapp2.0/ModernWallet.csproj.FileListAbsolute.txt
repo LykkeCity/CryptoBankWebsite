@@ -9,3 +9,14 @@ D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.Assem
 D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.AssemblyInfo.cs
 D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.dll
 D:\Projects\ModernWallet\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.pdb
+D:\Projects\Prime\mw-landing\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.deps.json
+D:\Projects\Prime\mw-landing\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.runtimeconfig.json
+D:\Projects\Prime\mw-landing\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.runtimeconfig.dev.json
+D:\Projects\Prime\mw-landing\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.dll
+D:\Projects\Prime\mw-landing\ModernWallet\bin\Debug\netcoreapp2.0\ModernWallet.pdb
+D:\Projects\Prime\mw-landing\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.csprojResolveAssemblyReference.cache
+D:\Projects\Prime\mw-landing\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.csproj.CoreCompileInputs.cache
+D:\Projects\Prime\mw-landing\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.AssemblyInfoInputs.cache
+D:\Projects\Prime\mw-landing\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.AssemblyInfo.cs
+D:\Projects\Prime\mw-landing\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.dll
+D:\Projects\Prime\mw-landing\ModernWallet\obj\Debug\netcoreapp2.0\ModernWallet.pdb
