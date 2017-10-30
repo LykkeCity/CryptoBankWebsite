@@ -1,5 +1,6 @@
 /ModernWallet/bin
 /ModernWallet/obj
+/ModernWallet/.idea
 /ModernWallet/wwwroot/.vscode
 /ModernWallet/wwwroot/node_modules
 /ModernWallet/wwwroot/dist

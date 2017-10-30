@@ -40,14 +40,15 @@ var app = app || {};
 			navigation : false,
 			autoPlay: true,
 			stopOnHover: true,
+            paginationNumbers: true,
 			navigationText: ['<span class="owl-custon-arrows icon-left-open"></span>', '<span class="owl-custon-arrows icon-right-open"></span>']
 	    });
 
-	    var paginationBtns = doc.querySelectorAll('.owl-page span');
-
-	    for(var i = 0; i < paginationBtns.length; i++) {
-	        paginationBtns[i].innerHTML = i + 1;
-        }
+        // var paginationBtns = doc.querySelectorAll('.owl-page span');
+        //
+        // for(var i = 0; i < paginationBtns.length; i++) {
+	     //    paginationBtns[i].innerHTML = i + 1;
+        // }
 	};
 
 	app.Slider.init();

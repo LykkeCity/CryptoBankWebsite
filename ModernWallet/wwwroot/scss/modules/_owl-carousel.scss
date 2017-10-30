@@ -228,7 +228,7 @@
   }
 }
 
-.owl-theme .owl-controls .owl-page span {
+.owl-theme .owl-controls .owl-page span.owl-numbers {
   display: block;
   width: 116px;
   line-height: 47px;
@@ -243,7 +243,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+.owl-theme .owl-controls .owl-page.active .owl-numbers, .owl-theme .owl-controls.clickable .owl-page:hover .owl-numbers {
   background: #05a8fc;
   color: white;
 }
@@ -262,12 +262,19 @@
 
 @media (max-width: 768px) {
   .carousel-module .item .col-6 {
-    &:first-of-type {
-      display: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+
+    .img.mw-400 {
+      max-width: 250px;
     }
-    &:last-of-type {
-      width: 100%;
-      margin: 0;
-    }
+    //&:first-of-type {
+    //  display: none;
+    //}
+    //&:last-of-type {
+    //  width: 100%;
+    //  margin: 0;
+    //}
   }
 }
