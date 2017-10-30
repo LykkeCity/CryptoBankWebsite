@@ -9,7 +9,7 @@
 
 .btn-lg {
   display: inline-block;
-  font-family: 'GeomanistRegular';
+  font-family: 'GeomanistBold';
   line-height: 58px;
   max-width: 245px;
   width: 100%;
@@ -21,6 +21,8 @@
   cursor: pointer;
   text-align: center;
   position: relative;
+  height: 58px;
+  overflow: hidden;
 
   i {
     display: inline-block;
@@ -43,6 +45,7 @@
   }
   span {
     margin-right: 2rem;
+    line-height: 58px;
   }
 }
 
@@ -75,7 +78,7 @@
   background: $lightblue;
   color: #fff;
   border: 2px solid #fff;
-  line-height: 56px;
+  line-height: 55px;
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
@@ -101,6 +104,19 @@
   border-radius: 50%;
   height: 48px;
   width: 48px;
+  line-height: 50px;
+  font-size: 0.8rem;
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 1600
+***********************************************************************************************************************/
+@media (max-width: 1600px) {
+  .btn-circle-md {
+    height: 40px;
+    width: 40px;
+    line-height: 41px;
+  }
 }
 
 /***********************************************************************************************************************
@@ -119,6 +135,11 @@
   .btn-md {
     max-width: 120px;
     font-size: 1.1rem;
+  }
+  .btn-circle-md {
+    height: 37px;
+    width: 37px;
+    line-height: 38px;
   }
 }
 
@@ -140,11 +161,17 @@
 @media (max-width: 768px) {
   .btn-lg {
     line-height: 48px;
-    max-width: 180px;
+    max-width: 170px;
+    height: 48px;
+
+    span {
+      line-height: 48px;
+    }
   }
   .btn-md {
     line-height: 38px;
     max-width: 110px;
+    height: 38px;
   }
   .btn-blue-white-border-bg {
     line-height: 44px;
@@ -159,6 +186,9 @@
     width: 40px;
     height: 40px;
   }
+  .btn-lg {
+    font-size: 0.9rem;
+  }
 }
 
 /***********************************************************************************************************************
@@ -167,12 +197,14 @@
 @media (max-width: 480px) {
   .btn-lg {
     line-height: 38px;
+    height: 38px;
     max-width: 100%;
     display: block;
     margin: 0 auto 2rem;
   }
   .btn-md {
     line-height: 28px;
+    height: 28px;
     max-width: 100%;
     display: block;
     margin: 0 auto;
@@ -187,7 +219,13 @@
 /***********************************************************************************************************************
 						Media Queries Desktop 380
 ***********************************************************************************************************************/
-@media (max-width: 380px) {}
+@media (max-width: 380px) {
+  .btn-circle-md {
+    height: 40px;
+    width: 40px;
+    line-height: 41px;
+  }
+}
 
 /***********************************************************************************************************************
 						Media Queries Desktop 320

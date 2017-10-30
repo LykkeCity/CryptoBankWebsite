@@ -64,7 +64,7 @@ console.log(app);
 			windowTopPosition = global.pageYOffset,
 			windowBottomPosition = windowTopPosition + self.viewport.windowHeight;
 
-		// self.addActiveOnHeader();
+		self.addActiveOnHeader();
 		if (app.Scroll !== undefined) {
 			app.Scroll.addActiveOnSubNavOnScroll();
 		}
@@ -170,7 +170,7 @@ console.log(app);
 			console.log(yOffset);
 			var contains = this.containsActive(header, 'active');
 
-		if (!contains && yOffset > 0) {
+		if (!contains && yOffset > 1000) {
 			this.addActive(header, 'active');
 		} else if (contains && yOffset === 0) {
 			this.removeActive(header, 'active');

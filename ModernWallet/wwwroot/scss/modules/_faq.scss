@@ -26,6 +26,7 @@
 .faq-heading {
   cursor: pointer;
   padding: 0.7rem 0;
+  transition: all 0.2s ease-in-out;
 
   span, i {
     vertical-align: middle;
@@ -40,6 +41,9 @@
     }
   }
 
+  &:hover {
+    color: $lightblue;
+  }
   &.active {
 
     i:before {
