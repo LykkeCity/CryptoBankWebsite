@@ -25,10 +25,9 @@ namespace ModernWallet
                     ApplicationSettings.Configuration["Email:Credentials:NetworkCredentials:Password"]);
 
             client.Send(
-                ApplicationSettings.Configuration["Email:Credentials:NetworkCredentials:UserName"],
-                //"dejan.stevanovic@primeholding.com", 
-                "elian.kurtenkov@primeholding.com",
-                "Recent Lykke registrations ", 
+               ApplicationSettings.Configuration["Email:Credentials:NetworkCredentials:UserName"],
+               ApplicationSettings.Configuration["Email:FeedbackRecipient"],
+               ApplicationSettings.Configuration["Email:FeedbackSubject"], 
                 feedback.Message);
         }
 
