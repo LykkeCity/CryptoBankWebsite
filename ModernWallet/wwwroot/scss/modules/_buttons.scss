@@ -9,7 +9,7 @@
 
 .btn-lg {
   display: inline-block;
-  font-family: 'GeomanistBold';
+  font-family: 'Proxima Nova Semibold';
   line-height: 58px;
   max-width: 245px;
   width: 100%;
@@ -51,8 +51,8 @@
 
 .btn-md {
   display: inline-block;
-  font-family: 'GeomanistMedium';
-  line-height: 48px;
+  font-family: 'Proxima Nova Semibold';
+  line-height: 49px;
   max-width: 160px;
   width: 100%;
   font-size: 1rem;
@@ -62,7 +62,7 @@
   border-radius: 25px;
   cursor: pointer;
   text-align: center;
-
+  height: 48px;
 }
 
 .btn-blue-bg {
@@ -122,7 +122,11 @@
 /***********************************************************************************************************************
 						Media Queries Desktop 1320
 ***********************************************************************************************************************/
-@media (max-width: 1320px) {}
+@media (max-width: 1320px) {
+  .btn-lg {
+    font-size: 1.4rem;
+  }
+}
 
 /***********************************************************************************************************************
 					  	Media Queries Tablet 1024
@@ -130,11 +134,11 @@
 @media (max-width: 1024px) {
   .btn-lg {
     max-width: 180px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .btn-md {
     max-width: 120px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .btn-circle-md {
     height: 37px;
@@ -149,9 +153,11 @@
 @media (max-width: 960px) {
   .btn-lg {
     max-width: 160px;
+    font-size: 1rem;
   }
   .btn-md {
     max-width: 100px;
+    font-size: 0.9rem;
   }
 }
 
@@ -201,9 +207,13 @@
     max-width: 100%;
     display: block;
     margin: 0 auto 2rem;
+
+    span {
+      line-height: 40px;
+    }
   }
   .btn-md {
-    line-height: 28px;
+    line-height: 30px;
     height: 28px;
     max-width: 100%;
     display: block;

@@ -32,7 +32,7 @@
   .nav-link {
     text-transform: uppercase;
     font-size: 0.8rem;
-    font-family: 'GeomanistMedium';
+    font-family: 'Proxima Nova Semibold';
     color: rgba(255, 255, 255, 0.4);
     display: inline-block;
     margin-right: 1.3rem;
@@ -41,7 +41,7 @@
       padding-right: 0;
     }
 
-    &:hover {
+    &:hover, &.active {
       color: #fff;
       box-shadow: inset 0 -0.3rem 0 #fff;
     }
@@ -92,7 +92,7 @@
 
 .header-content-heading {
   font-size: 2.6rem;
-  font-family: 'GeomanistBold';
+  font-family: 'Proxima Nova Semibold';
   line-height: 1.56;
   color: #fff;
   text-align: center;
@@ -100,7 +100,7 @@
 
 .header-content-text {
   font-size: 1.6rem;
-  font-family: 'GeomanistLight';
+  font-family: 'Proxima Nova Regular';
   line-height: 1.43;
   color: #fff;
   text-align: center;
@@ -191,8 +191,12 @@
     padding: 0.5rem 1rem;
     font-size: 1.3rem;
     text-transform: uppercase;
-    font-family: 'GeomanistMedium';
+    font-family: 'Proxima Nova Semibold';
     color: #333;
+
+    &.active {
+      color: $lightblue;
+    }
   }
 }
 .curtain {
