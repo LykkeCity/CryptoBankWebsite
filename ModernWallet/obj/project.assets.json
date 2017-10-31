@@ -13099,7 +13099,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex Dojcinovic\\.nuget\\packages\\": {},
+    "C:\\Users\\dejan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13111,14 +13111,14 @@
       "projectUniqueName": "D:\\Projects\\mw-landing\\ModernWallet\\ModernWallet.csproj",
       "projectName": "ModernWallet",
       "projectPath": "D:\\Projects\\mw-landing\\ModernWallet\\ModernWallet.csproj",
-      "packagesPath": "C:\\Users\\Alex Dojcinovic\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\dejan\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\mw-landing\\ModernWallet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alex Dojcinovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

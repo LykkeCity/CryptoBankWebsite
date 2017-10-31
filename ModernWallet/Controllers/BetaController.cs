@@ -2,6 +2,7 @@
 using ModernWallet.Models;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Hosting;
+using System.Linq;
 
 namespace ModernWallet.Controllers
 {
@@ -18,7 +19,10 @@ namespace ModernWallet.Controllers
             // This fields must not have any value (robots detection). 
             if (!string.IsNullOrEmpty(beta.Dummy) || !ModelState.IsValid)
             {
-                return NotFound();
+                var errors = string.Join("; ", ModelState.Values
+                                        .SelectMany(x => x.Errors)
+                                        .Select(x => x.ErrorMessage));
+                return NotFound(errors);
             }
 
             var newsletterString = JsonConvert.SerializeObject(beta);

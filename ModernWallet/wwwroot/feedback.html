@@ -69,7 +69,7 @@
                     <h1 class="heading-md center font-darkgray">Had a chance to test Lykke Modern Wallet?</h1>
                     <p class="text-lg center pb-60">Get in touch with us and share your thoughts on how to make it better</p>
 
-                    <form action="/api/feedback" method="post">
+                    <form action="/api/feedback" method="post" class="content">
                         <div class="row pb-20">
                             <div class="col-6">
                                 <input type="text" name="FirstName" placeholder="First Name *" required>
@@ -83,18 +83,23 @@
                                 <input type="email" name="Email" id="Email" placeholder="E-mail address *" required>
                             </div>
                         </div>
-                        <div class="row pb-40">
+                        <div class="row">
                             <div class="col-12">
                                 <textarea name="Message" id="" cols="30" rows="10" placeholder="What do you like about Lykke Modern Wallet and what do you think can be improved?"></textarea>
                             </div>
                         </div>
+                        <div class="error left pl-10 text-xs"></div>
                         <input type="hidden" name="Dummy" value="" />
-                        <div class="row pb-80">
+                        <div class="row pb-80 pt-40">
                             <div class="col-12 center">
                                 <button type="button" class="btn-blue-bg btn-lg" onclick="app.FeedbackForm.submit(this)">Send feedback</button>
                             </div>
                         </div>
                     </form>
+                    <div class="success center pt-60 pb-140">
+                        <h1 class="heading-s pb-20 font-green">Thank you!</h1>
+                        <p class="text-md pb-20 font-gray">Your feedback has successfully sent. We will contact you as soon as possible.</p>
+                    </div>
                     <div class="row pb-40">
                         <div class="col-12">
                             <p class="text-md font-gray center pb-30">You can also access our <a href="https://telegram.me/joinchat/AEGiqkF-_dNaHMwQbRSnAg" class="font-lightblue">Telegram Group</a> and let us know what do you think.</p>
@@ -154,6 +159,7 @@
                                             <div class="col-10">
                                                 <input type="email" name="Email" placeholder="E-mail address" required>
                                                 <i class="icon-asset-74"></i>
+                                                <div class="error left pl-10 text-xs"></div>
                                             </div>
                                             <input type="hidden" name="Dummy" value="" />
                                             <div class="col-2">
@@ -200,6 +206,7 @@
                                 <div class="col-10">
                                     <input type="email" name="Email" placeholder="E-mail address" required>
                                     <i class="icon-asset-74"></i>
+                                    <div class="error left pl-10 text-xs"></div>
                                 </div>
                                 <input type="hidden" name="Dummy" value="" />
                                 <div class="col-2">

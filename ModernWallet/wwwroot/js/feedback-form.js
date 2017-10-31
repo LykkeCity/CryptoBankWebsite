@@ -6,16 +6,42 @@
 
         submit: function (theform) {
             var feedbackForm = $(theform).parents('form');
+            var errorLabel = feedbackForm.find('.error');
+            var action = feedbackForm.attr('action');
 
             $.ajax({
                 type: "POST",
-                url: feedbackForm.attr('action'),
+                url: action,
                 data: feedbackForm.serialize(),
                 success: function (response) {
-                    toastr["success"](response, "Info");
+                    if (action == '/api/beta') {
+                        // Join Beta
+                        var content = $(theform).closest('.content');
+                        content.animate({
+                            opacity: 0
+                        }, 500, function () {
+                            content.hide();
+                            content.prev('.title').css('background', '#20d330');
+                            content.next('.success').fadeIn('slow');
+                        });
+                    } else if (action == '/api/feedback') {
+                        // Feedback
+                        var content = feedbackForm;
+                        content.animate({
+                            opacity: 0
+                        }, 500, function () {
+                            content.hide();
+                            content.next('.success').fadeIn('slow');
+                        });
+                    } else {
+                        // Newsletter
+                        toastr['success'](response, 'Info');
+                    }
+
+                    errorLabel.html('');
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    toastr["error"]("Something went wrong :(<br>Please, try again later...", "Error");
+                    errorLabel.html(XMLHttpRequest.responseText);
                 }
             });
         }
