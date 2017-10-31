@@ -28,7 +28,7 @@ namespace ModernWallet.Controllers
                 return NotFound(errors);
             }
 
-            //EmailSender.SendFeedback(feedback);
+            EmailSender.SendFeedback(feedback);
 
             var feedbackString = JsonConvert.SerializeObject(feedback);
 
