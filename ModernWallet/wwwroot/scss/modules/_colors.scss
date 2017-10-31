@@ -8,6 +8,8 @@ $text-color: #3f4d60;
 $input-border: #d1d1d1;
 
 $white: #fefefe;
+$red: #a94442;
+$greenTitle: #20d330;
 
 .lightblue-bg {
   background: $lightblue;
@@ -35,4 +37,8 @@ $white: #fefefe;
 
 .font-lightblue {
   color: $lightblue;
+}
+
+.font-green {
+    color: $greenTitle;
 }

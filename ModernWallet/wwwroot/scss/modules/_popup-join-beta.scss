@@ -2,7 +2,6 @@
 
     @include border-radius(10px);
     @include popup-shadow;
-
     background: $white;
 
     .title {
@@ -27,7 +26,6 @@
 
                     .title {
                         @include border-top-radius(10px);
-                        
                     }
 
                     .content {
@@ -48,8 +46,9 @@
                                 width: 100%;
                                 display: block;
                                 margin: 1rem auto;
+                                margin-bottom: 0;
                             }
-                        
+
                             i {
                                 color: $input-border;
                                 position: absolute;
@@ -58,18 +57,23 @@
                             }
 
                             button {
+                                margin-top: 1rem;
                                 margin-bottom: .3rem;
                                 max-width: none;
                                 width: 80%;
                             }
                         }
                     }
+
+                    .success {
+                        display: none;
+                        text-align: center;
+                        padding: 2rem 1rem;
+                    }
                 }
             }
         }
     }
-
-
 }
 
 .popup-main-wrapper {
