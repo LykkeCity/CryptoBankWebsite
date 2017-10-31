@@ -1,5 +1,5 @@
 var app = app || {};
-console.log(app);
+
 (function ScrollLibraryModule(doc, global) {
 
 	app.ScrollLibrary = Object.create(app.BaseView);
@@ -17,7 +17,7 @@ console.log(app);
 		// console.log(this.viewport);
 	};
 
-    console.log(app.ScrollLibrary);
+    // console.log(app.ScrollLibrary);
 
     //bind this
     app.ScrollLibrary.init = app.ScrollLibrary.init.bind(app.ScrollLibrary);
@@ -35,7 +35,7 @@ console.log(app);
 	app.ScrollLibrary.obj = {};
 
 	app.ScrollLibrary.bindEvents = function () {
-		console.log('ScrollLibrary binded');
+		// console.log('ScrollLibrary binded');
 		global.addEventListener('scroll', this.scrollFunc);
 	};
 
@@ -167,7 +167,7 @@ console.log(app);
 
 		var header = doc.querySelector('.header'),
 			yOffset = window.pageYOffset;
-			console.log(yOffset);
+			// console.log(yOffset);
 			var contains = this.containsActive(header, 'active');
 
 		if (!contains && yOffset > 1000) {
@@ -179,4 +179,4 @@ console.log(app);
     app.ScrollLibrary.init();
 })(document, window);
 
-console.log(app);
+// console.log(app);

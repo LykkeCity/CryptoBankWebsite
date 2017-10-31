@@ -1,12 +1,18 @@
+@-webkit-keyframes top-in {
+  from {top: -87px;}
+  to {top: 0;}
+}
+@keyframes top-in {
+  from {top: -87px;}
+  to {top: 0;}
+}
 .header {
   height: 87px;
   overflow: hidden;
   position: relative;
   z-index: 1;
   box-shadow: 1.4px 1.4px 5px 0 rgba(0, 0, 0, 0.25);
-  transition: all 0.2s ease-in-out;
 
-  // TODO add fadein animation
   &.active {
     position: fixed;
     top: 0;
@@ -14,6 +20,8 @@
     right: 0;
     width: 100%;
     z-index: 200;
+    -webkit-animation: top-in 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: top-in 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .nav-links {
     font-size: 0;
