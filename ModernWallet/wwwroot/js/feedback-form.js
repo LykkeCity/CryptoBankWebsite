@@ -41,7 +41,14 @@
                     errorLabel.html('');
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    errorLabel.html(XMLHttpRequest.responseText);
+                    if (action == '/api/feedback') {
+                        var errors = JSON.parse(XMLHttpRequest.responseText);
+                        $('#first-name-error').html(errors['FirstName']);
+                        $('#last-name-error').html(errors['LastName']);
+                        $('#email-error').html(errors['Email']);
+                    } else {
+                        errorLabel.html(XMLHttpRequest.responseText);
+                    }
                 }
             });
         }

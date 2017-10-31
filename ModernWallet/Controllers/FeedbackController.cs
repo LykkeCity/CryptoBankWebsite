@@ -18,13 +18,17 @@ namespace ModernWallet.Controllers
             // This fields must not have any value (robots detection). 
             if (!string.IsNullOrEmpty(feedback.Dummy) || !ModelState.IsValid)
             {
-                var errors = string.Join(" ", ModelState.Values
-                                        .SelectMany(x => x.Errors)
-                                        .Select(x => x.ErrorMessage));
+                var errors = ModelState.Where(s => s.Value.ValidationState == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Invalid)
+                    .ToDictionary(
+                    k => k.Key,
+                    v => string.Join(" / ", v.Value.Errors.Select(e => e.ErrorMessage).ToList()
+                    ));
+
+  
                 return NotFound(errors);
             }
 
-            EmailSender.SendFeedback(feedback);
+            //EmailSender.SendFeedback(feedback);
 
             var feedbackString = JsonConvert.SerializeObject(feedback);
 

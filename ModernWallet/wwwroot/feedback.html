@@ -73,14 +73,17 @@
                         <div class="row pb-20">
                             <div class="col-6">
                                 <input type="text" name="FirstName" placeholder="First Name *" required>
+                                <div id="first-name-error" class="error left pl-10 text-xs"></div>
                             </div>
                             <div class="col-6">
                                 <input type="text" name="LastName" placeholder="Last Name *" required>
+                                <div id="last-name-error" class="error left pl-10 text-xs"></div>
                             </div>
                         </div>
                         <div class="row pb-20">
                             <div class="col-12">
                                 <input type="email" name="Email" id="Email" placeholder="E-mail address *" required>
+                                <div id="email-error" class="error left pl-10 text-xs"></div>
                             </div>
                         </div>
                         <div class="row">
@@ -88,7 +91,7 @@
                                 <textarea name="Message" id="" cols="30" rows="10" placeholder="What do you like about Lykke Modern Wallet and what do you think can be improved?"></textarea>
                             </div>
                         </div>
-                        <div class="error left pl-10 text-xs"></div>
+
                         <input type="hidden" name="Dummy" value="" />
                         <div class="row pb-80 pt-40">
                             <div class="col-12 center">
@@ -96,9 +99,9 @@
                             </div>
                         </div>
                     </form>
-                    <div class="success center pt-60 pb-140">
-                        <h1 class="heading-s pb-20 font-green">Thank you!</h1>
-                        <p class="text-md pb-20 font-gray">Your feedback has successfully sent. We will contact you as soon as possible.</p>
+                    <div class="success center pt-100 pb-160">
+                        <h1 class="heading-md pb-20 font-green">Thank you!</h1>
+                        <p class="text-s pb-20 font-gray">Your feedback has successfully sent. We will contact you as soon as possible.</p>
                     </div>
                     <div class="row pb-40">
                         <div class="col-12">
