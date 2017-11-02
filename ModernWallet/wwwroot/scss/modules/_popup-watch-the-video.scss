@@ -1,7 +1,11 @@
 #popup-watch-the-video {
-    
+        height: 100%;
         @include border-radius(10px);
         @include popup-shadow;
     
         background: $white;
+
+  .row, .col-12 {
+    height: 100%;
+  }
 }

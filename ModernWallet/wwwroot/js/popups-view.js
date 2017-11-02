@@ -38,17 +38,17 @@ var app = app || {};
         var self = app.Popups,
             type = this.getAttribute('data-type'),
             popup = doc.createElement('div'),
-            popupCertain = doc.createElement('div'),
-            body = doc.querySelector('body');
+            popupCertain = doc.createElement('div');
+            // body = doc.querySelector('body');
 
         popup.className = "popup-main-wrapper";
         popupCertain.className = "popup-certain";
-
+        popup.className += type === 'joinUs' ? ' join' : ' video';
         popup.innerHTML = type === 'joinUs' ? Templates.joinUs: Templates.videoYT;
 
         doc.body.appendChild(popupCertain);
         doc.body.appendChild(popup);
-        self.addActive(body, 'blur-popup');
+        // self.addActive(body, 'blur-popup');
 
         var certain = doc.querySelector('.popup-certain'),
             close = doc.querySelector('.popup-close');
@@ -64,15 +64,15 @@ var app = app || {};
         var certain = doc.querySelector('.popup-certain'),
             close = doc.querySelector('.popup-close'),
             popupCertain = doc.querySelector('.popup-certain'),
-            popupTemplate = doc.querySelector('.popup-main-wrapper'),
-            body = doc.querySelector('body');
+            popupTemplate = doc.querySelector('.popup-main-wrapper');
+            // body = doc.querySelector('body');
 
         this.events.off(certain, 'click', this.closePopup);
         this.events.off(close, 'click', this.closePopup);
 
         doc.body.removeChild(popupCertain);
         doc.body.removeChild(popupTemplate);
-        this.removeActive(body, 'blur-popup');
+        // this.removeActive(body, 'blur-popup');
     };
 
     app.Popups.init();

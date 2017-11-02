@@ -36,10 +36,10 @@ var app = app || {};
 
         var self = app.Navigation,
             mobileNav = doc.querySelector('.mobile-nav-module'),
-            mobileCurtain = doc.querySelector('.curtain'),
-            body = doc.querySelector('body');
+            mobileCurtain = doc.querySelector('.curtain');
+            // body = doc.querySelector('body');
 
-        self.addActive(body, 'blur-nav');
+        // self.addActive(body, 'blur-nav');
         self.addActive(mobileNav, 'active');
         self.addActive(mobileCurtain, 'active');
 
@@ -50,10 +50,10 @@ var app = app || {};
 
         var self = app.Navigation,
             mobileNav = doc.querySelector('.mobile-nav-module'),
-            mobileCurtain = doc.querySelector('.curtain'),
-            body = doc.querySelector('body');
+            mobileCurtain = doc.querySelector('.curtain');
+            // body = doc.querySelector('body');
 
-        self.removeActive(body, 'blur-nav');
+        // self.removeActive(body, 'blur-nav');
         self.removeActive(mobileNav, 'active');
         self.removeActive(mobileCurtain, 'active');
 
