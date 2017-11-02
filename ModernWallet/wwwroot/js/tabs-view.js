@@ -93,33 +93,5 @@ var app = app || {};
         self.addActive(this, 'active');
     };
 
-    app.Tabs.initNav = function() {
-
-        var self = app.Tabs,
-            mobileNav = doc.querySelector('.mobile-nav-module'),
-            mobileCurtain = doc.querySelector('.curtain'),
-            body = doc.querySelector('body');
-
-        self.addActive(body, 'blur-nav');
-        self.addActive(mobileNav, 'active');
-        self.addActive(mobileCurtain, 'active');
-
-        self.events.on(mobileCurtain, 'click', self.closeNav);
-    };
-
-    app.Tabs.closeNav = function() {
-
-        var self = app.Tabs,
-            mobileNav = doc.querySelector('.mobile-nav-module'),
-            mobileCurtain = doc.querySelector('.curtain'),
-            body = doc.querySelector('body');
-
-        self.removeActive(body, 'blur-nav');
-        self.removeActive(mobileNav, 'active');
-        self.removeActive(mobileCurtain, 'active');
-
-        self.events.off(mobileCurtain, 'click', self.initNav);
-    };
-
     app.Tabs.init();
 })(jQuery, document);

@@ -95,33 +95,33 @@ html {
   left: 0;
 }
 
-body.blur-nav {
-  overflow: hidden;
-  .header,
-  .footer,
-  .wrapper,
-  & >:not(.mobile-nav-module) {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-  }
-}
-
-body.blur-popup {
-  overflow: hidden;
-  .header,
-  .footer,
-  .wrapper,
-  & >:not(.popup-main-wrapper) {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-  }
-}
+//body.blur-nav {
+//  overflow: hidden;
+//  .header,
+//  .footer,
+//  .wrapper,
+//  & >:not(.mobile-nav-module) {
+//    -webkit-filter: blur(5px);
+//    -moz-filter: blur(5px);
+//    -o-filter: blur(5px);
+//    -ms-filter: blur(5px);
+//    filter: blur(5px);
+//  }
+//}
+//
+//body.blur-popup {
+//  overflow: hidden;
+//  .header,
+//  .footer,
+//  .wrapper,
+//  & >:not(.popup-main-wrapper) {
+//    -webkit-filter: blur(5px);
+//    -moz-filter: blur(5px);
+//    -o-filter: blur(5px);
+//    -ms-filter: blur(5px);
+//    filter: blur(5px);
+//  }
+//}
 
 .underline {
   text-decoration: underline;
@@ -152,7 +152,7 @@ body.blur-popup {
 ***********************************************************************************************************************/
 @media (max-width: 960px) {
   html {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
   }
 }
 
