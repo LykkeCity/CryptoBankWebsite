@@ -28,7 +28,7 @@ namespace ModernWallet.Controllers
             var newsletterString = JsonConvert.SerializeObject(beta);
 
             FileHelper.Save(_Env, "/Storage/Beta/", newsletterString);
-
+     
             return Ok(ApplicationSettings.Configuration["Email:Messages:Beta"]);
         }
     }
