@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Storage\Feedbacks\" />
-    <Folder Include="Storage\Beta\" />
-    <Folder Include="Storage\Newsletters\" />
+    <None Include="wwwroot\Storage\Beta\empty.txt" />
+    <None Include="wwwroot\Storage\Feedbacks\empty.txt" />
+    <None Include="wwwroot\Storage\Newsletters\empty.txt" />
   </ItemGroup>
 
   <ItemGroup>
