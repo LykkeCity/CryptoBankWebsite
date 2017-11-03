@@ -1,6 +1,6 @@
 #popup-watch-the-video {
         height: 100%;
-        @include border-radius(10px);
+        //@include border-radius(10px);
         @include popup-shadow;
     
         background: $white;

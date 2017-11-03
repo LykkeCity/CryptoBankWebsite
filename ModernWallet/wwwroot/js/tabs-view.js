@@ -20,7 +20,7 @@ var app = app || {};
     app.Tabs.els.tabs = {
         allTabs: doc.querySelectorAll('.single-tab'),
         allFaq: doc.querySelectorAll('.faq-heading'),
-        boxClick: doc.querySelectorAll('.box-click'),
+        boxClickWrapper: doc.querySelectorAll('.box-click-wrapper'),
         nav: doc.querySelector('.nav-btn')
     };
 
@@ -40,9 +40,9 @@ var app = app || {};
             }
         }
 
-        if (this.els.tabs.boxClick.length > 0) {
-            for(var k = 0; k < this.els.tabs.boxClick.length; k++) {
-                this.events.on(this.els.tabs.boxClick[k], 'click', this.initBoxClick);
+        if (this.els.tabs.boxClickWrapper.length > 0) {
+            for(var k = 0; k < this.els.tabs.boxClickWrapper.length; k++) {
+                this.events.on(this.els.tabs.boxClickWrapper[k], 'click', this.initBoxClick);
             }
         }
 
@@ -87,9 +87,13 @@ var app = app || {};
     app.Tabs.initBoxClick = function() {
 
         var self = app.Tabs,
-            activeBox = doc.querySelector('.box-click.active');
+            box = this.querySelector('.box-click'),
+            activeBox = doc.querySelector('.box-click.active'),
+            activeBoxWrapper = doc.querySelector('.box-click-wrapper.active');
 
         self.removeActive(activeBox, 'active');
+        self.removeActive(activeBoxWrapper, 'active');
+        self.addActive(box, 'active');
         self.addActive(this, 'active');
     };
 
