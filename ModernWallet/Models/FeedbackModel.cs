@@ -9,7 +9,7 @@ namespace ModernWallet.Models
         [Required]
         public string LastName { get; set; }
         [Required]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage = "Please enter valid e-mail address")]
         public string Email { get; set; }
         public string Message { get; set; }
     }

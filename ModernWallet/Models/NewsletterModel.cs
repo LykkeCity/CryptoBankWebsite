@@ -5,7 +5,7 @@ namespace ModernWallet.Models
     public class NewsletterModel:BaseForm
     {
         [Required]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage = "Please enter valid e-mail address")]
         public string Email { get; set; }
     }
 }
