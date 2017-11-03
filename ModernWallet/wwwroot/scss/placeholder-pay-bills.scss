@@ -2,13 +2,20 @@
   .box-click {
     cursor: pointer;
     padding: 0.3rem 0;
-    transition: all 0.2s ease-in-out;
     border-radius: 30px;
-
+    transition: all 0.2s ease-in-out;
 
     &.active {
       background: $purple-blue-gradient;
       color: #fff;
+    }
+  }
+  .box-click-wrapper {
+    padding: 1.44rem 2.16rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &.active {
+      box-shadow: 1.4px 1.4px 15px 0 rgba(0, 0, 0, 0.1);
     }
   }
 }

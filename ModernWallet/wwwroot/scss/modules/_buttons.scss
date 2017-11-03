@@ -132,14 +132,14 @@
 					  	Media Queries Tablet 1024
 ***********************************************************************************************************************/
 @media (max-width: 1024px) {
-  .btn-lg {
-    max-width: 180px;
-    font-size: 1.3rem;
-  }
-  .btn-md {
-    max-width: 120px;
-    font-size: 1.2rem;
-  }
+  //.btn-lg {
+  //  max-width: 180px;
+  //  font-size: 1.6rem;
+  //}
+  //.btn-md {
+  //  max-width: 120px;
+  //  font-size: 1.3rem;
+  //}
   .btn-circle-md {
     height: 37px;
     width: 37px;
@@ -151,14 +151,14 @@
 					  	Media Queries Tablet 960
 ***********************************************************************************************************************/
 @media (max-width: 960px) {
-  .btn-lg {
-    max-width: 160px;
-    font-size: 1rem;
-  }
-  .btn-md {
-    max-width: 100px;
-    font-size: 0.9rem;
-  }
+  //.btn-lg {
+  //  max-width: 160px;
+  //  font-size: 1.2rem;
+  //}
+  //.btn-md {
+  //  max-width: 100px;
+  //  font-size: 1.1rem;
+  //}
 }
 
 /***********************************************************************************************************************
@@ -167,7 +167,7 @@
 @media (max-width: 768px) {
   .btn-lg {
     line-height: 48px;
-    max-width: 170px;
+    max-width: 40%;
     height: 48px;
 
     span {
@@ -223,6 +223,12 @@
   }
   .btn-blue-white-border-bg {
     line-height: 34px;
+  }
+
+  .btn-circle-md {
+    height: 44px;
+    width: 44px;
+    line-height: 45px;
   }
 }
 

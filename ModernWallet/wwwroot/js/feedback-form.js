@@ -35,7 +35,7 @@
                         });
                     } else {
                         // Newsletter
-                        toastr['success'](response, 'Info');
+                        toastr['success'](response);
                     }
 
                     errorLabel.html('');

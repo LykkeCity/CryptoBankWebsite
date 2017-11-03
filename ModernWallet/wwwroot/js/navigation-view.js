@@ -63,6 +63,7 @@ var app = app || {};
     app.Navigation.addActiveOnNavLinks = function () {
 
         var page = this.urlData.url().split('/').pop();
+            page = page === '' ? 'index.html' : page;
 
         for(var i = 0; i < this.els.navigation.navLinks.length; i++) {
             if (this.els.navigation.navLinks[i].href.split('/').pop() === page) {
