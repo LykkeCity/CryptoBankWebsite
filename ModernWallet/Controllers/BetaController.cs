@@ -25,6 +25,10 @@ namespace ModernWallet.Controllers
                 return NotFound(errors);
             }
 
+
+
+            EmailSender.SendBeta(_Env, beta);
+
             var newsletterString = JsonConvert.SerializeObject(beta);
 
             FileHelper.Save(_Env, "/Storage/Beta/", newsletterString);
