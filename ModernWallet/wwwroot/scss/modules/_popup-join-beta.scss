@@ -19,6 +19,7 @@
 
         &.content {
             padding: 2rem;
+            @include border-radius(10px);
             background-color: #fefefe;
             .right-column {
                 .form {
@@ -88,8 +89,8 @@
   &.video {
     height: 45%;
     border-radius: 0;
-    padding: 2px;
-    background: #fff;
+    //padding: 2px;
+    background: transparent;
   }
   &.join {
     height: auto;
