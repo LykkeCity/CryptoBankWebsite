@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="Lykke.AzureStorage" Version="2.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
@@ -27,6 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Requests\" />
+    <Folder Include="Services\" />
     <Folder Include="wwwroot\img\Emails\" />
   </ItemGroup>
 

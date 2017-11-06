@@ -2,6 +2,75 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Autofac/4.6.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.ComponentModel": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "AutoMapper/6.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "System.Collections": "4.3.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.Linq.Queryable": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        }
+      },
+      "libphonenumbers-dotnet/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.Runtime.Serialization.Json": "4.0.2"
+        },
+        "compile": {
+          "lib/netstandard1.0/libphonenumbers-dotnet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/libphonenumbers-dotnet.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -40,6 +109,53 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "Lykke.AzureStorage/2.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Lykke.Common": "1.1.98",
+          "Lykke.SettingsReader": "1.0.41",
+          "WindowsAzure.Storage": "8.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Lykke.AzureStorage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lykke.AzureStorage.dll": {}
+        }
+      },
+      "Lykke.Common/1.1.98": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.6.1",
+          "Autofac.Extensions.DependencyInjection": "4.2.0",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Collections.Specialized": "4.3.0",
+          "System.Runtime.Loader": "4.3.0",
+          "libphonenumbers-dotnet": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Lykke.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lykke.Common.dll": {}
+        }
+      },
+      "Lykke.SettingsReader/1.0.41": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Lykke.SettingsReader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lykke.SettingsReader.dll": {}
         }
       },
       "Microsoft.ApplicationInsights/2.4.0": {
@@ -3875,17 +3991,17 @@
           "lib/netstandard1.3/System.Linq.Parallel.dll": {}
         }
       },
-      "System.Linq.Queryable/4.0.1": {
+      "System.Linq.Queryable/4.3.0": {
         "type": "package",
         "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0"
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
         },
         "compile": {
           "ref/netstandard1.0/System.Linq.Queryable.dll": {}
@@ -4299,6 +4415,20 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Runtime.Loader/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Loader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
         }
       },
       "System.Runtime.Numerics/4.3.0": {
@@ -4995,7 +5125,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "WindowsAzure.Storage/8.1.4": {
+      "WindowsAzure.Storage/8.4.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.OData": "5.8.2",
@@ -5013,6 +5143,56 @@
     }
   },
   "libraries": {
+    "Autofac/4.6.1": {
+      "sha512": "/feXiAKiSe9XLK+fdnz0p1iDg6JCkOhjqMkw9ewGy0f6IzXgmPLDRa4FUg6nIGRm2sTO677w/76uJ5OJU6EiyA==",
+      "type": "package",
+      "path": "autofac/4.6.1",
+      "files": [
+        "autofac.4.6.1.nupkg.sha512",
+        "autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/4.2.0": {
+      "sha512": "cqBmgg9y7ahGbt7CPdvZFL6bA0PEwFyhIofUoUxEteZc+d0yNnE6ZvIWxHEM2F2HPJlC9SRnHWiZQq8r53moAw==",
+      "type": "package",
+      "path": "autofac.extensions.dependencyinjection/4.2.0",
+      "files": [
+        "autofac.extensions.dependencyinjection.4.2.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
+    "AutoMapper/6.1.1": {
+      "sha512": "A+6PAblvzmkXPS20nFBQJvlNSW5oEdyfN5+cxT/Du35fTNyuP5pNDXT64KT/jBgxt7CPduOM0Y7oLnNe0E5IXg==",
+      "type": "package",
+      "path": "automapper/6.1.1",
+      "files": [
+        "automapper.6.1.1.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net45/AutoMapper.dll",
+        "lib/net45/AutoMapper.xml",
+        "lib/netstandard1.1/AutoMapper.dll",
+        "lib/netstandard1.1/AutoMapper.xml",
+        "lib/netstandard1.3/AutoMapper.dll",
+        "lib/netstandard1.3/AutoMapper.xml"
+      ]
+    },
+    "libphonenumbers-dotnet/1.1.0": {
+      "sha512": "6sUv/EJnGqYRXwHJ+66BOCRkgpDKj3OFOBCvsD8lQ5UCDx1AwvXXzsyW1Lks7erGdlVeav42vQ6g46Y4I/XPNg==",
+      "type": "package",
+      "path": "libphonenumbers-dotnet/1.1.0",
+      "files": [
+        "lib/net45/libphonenumbers-dotnet.dll",
+        "lib/netstandard1.0/libphonenumbers-dotnet.dll",
+        "libphonenumbers-dotnet.1.1.0.nupkg.sha512",
+        "libphonenumbers-dotnet.nuspec"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -5029,6 +5209,36 @@
         "runtimes/win-arm/native/libuv.dll",
         "runtimes/win-x64/native/libuv.dll",
         "runtimes/win-x86/native/libuv.dll"
+      ]
+    },
+    "Lykke.AzureStorage/2.1.4": {
+      "sha512": "OIZKJk75cx/Nos09htMeN4iZ03LR4uMZAOlElzILHTk+JBwk5Iw6w0KCbz5YlJlmJ+4BWAPg2gxtV9OCUarnyw==",
+      "type": "package",
+      "path": "lykke.azurestorage/2.1.4",
+      "files": [
+        "lib/netstandard2.0/Lykke.AzureStorage.dll",
+        "lykke.azurestorage.2.1.4.nupkg.sha512",
+        "lykke.azurestorage.nuspec"
+      ]
+    },
+    "Lykke.Common/1.1.98": {
+      "sha512": "b68EeH0gCXRxEXKNe7pNexbOE/gXqwboeo1iZvrLNl+PcMvOqS2lyavXPvkOhRsOUElSY4KirvDqCKYSxoV4hA==",
+      "type": "package",
+      "path": "lykke.common/1.1.98",
+      "files": [
+        "lib/netstandard2.0/Lykke.Common.dll",
+        "lykke.common.1.1.98.nupkg.sha512",
+        "lykke.common.nuspec"
+      ]
+    },
+    "Lykke.SettingsReader/1.0.41": {
+      "sha512": "d+25vCHkHq1T9z8Jx4/1xFPBFFKS0xxyGkQ7TpAzHOjI3f2crWXEfflbP61Ki0LVRG46dxXiLDkmuZG5JOgCMA==",
+      "type": "package",
+      "path": "lykke.settingsreader/1.0.41",
+      "files": [
+        "lib/netstandard2.0/Lykke.SettingsReader.dll",
+        "lykke.settingsreader.1.0.41.nupkg.sha512",
+        "lykke.settingsreader.nuspec"
       ]
     },
     "Microsoft.ApplicationInsights/2.4.0": {
@@ -10157,10 +10367,10 @@
         "system.linq.parallel.nuspec"
       ]
     },
-    "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+    "System.Linq.Queryable/4.3.0": {
+      "sha512": "In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
       "type": "package",
-      "path": "system.linq.queryable/4.0.1",
+      "path": "system.linq.queryable/4.3.0",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -10210,7 +10420,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.linq.queryable.4.0.1.nupkg.sha512",
+        "system.linq.queryable.4.3.0.nupkg.sha512",
         "system.linq.queryable.nuspec"
       ]
     },
@@ -11395,6 +11605,36 @@
         "runtimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
         "system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
         "system.runtime.interopservices.runtimeinformation.nuspec"
+      ]
+    },
+    "System.Runtime.Loader/4.3.0": {
+      "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "type": "package",
+      "path": "system.runtime.loader/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/_._",
+        "lib/netstandard1.5/System.Runtime.Loader.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/netstandard1.5/System.Runtime.Loader.dll",
+        "ref/netstandard1.5/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/de/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/es/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/fr/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/it/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ja/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ko/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ru/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.Loader.xml",
+        "system.runtime.loader.4.3.0.nupkg.sha512",
+        "system.runtime.loader.nuspec"
       ]
     },
     "System.Runtime.Numerics/4.3.0": {
@@ -13067,10 +13307,10 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "WindowsAzure.Storage/8.1.4": {
-      "sha512": "W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
+    "WindowsAzure.Storage/8.4.0": {
+      "sha512": "2BzIL/b/2d86+kd74xRoNqz97VVnNv0+aaggSCR6k78nN2UVKWudMe2kxi6gmimGcJqq8BkFCavXhS8xF1INvg==",
       "type": "package",
-      "path": "windowsazure.storage/8.1.4",
+      "path": "windowsazure.storage/8.4.0",
       "files": [
         "lib/net45/Microsoft.WindowsAzure.Storage.dll",
         "lib/net45/Microsoft.WindowsAzure.Storage.pdb",
@@ -13085,13 +13325,16 @@
         "lib/wp8/Microsoft.WindowsAzure.Storage.pdb",
         "lib/wpa/Microsoft.WindowsAzure.Storage.dll",
         "lib/wpa/Microsoft.WindowsAzure.Storage.pdb",
-        "windowsazure.storage.8.1.4.nupkg.sha512",
+        "windowsazure.storage.8.4.0.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "AutoMapper >= 6.1.1",
+      "Autofac.Extensions.DependencyInjection >= 4.2.0",
+      "Lykke.AzureStorage >= 2.1.4",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0",
@@ -13142,6 +13385,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Lykke.AzureStorage": {
+            "target": "Package",
+            "version": "2.1.4"
+          },
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "4.2.0"
+          },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "2.0.0"
@@ -13150,6 +13401,10 @@
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
+          },
+          "AutoMapper": {
+            "target": "Package",
+            "version": "6.1.1"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
