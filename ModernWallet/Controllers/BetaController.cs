@@ -10,7 +10,7 @@ namespace ModernWallet.Controllers
     public class BetaController : BaseController
     {
 
-        public BetaController(IHostingEnvironment envrnmt):base(envrnmt){}
+        public BetaController(IHostingEnvironment envrnmt) :base(envrnmt) {}
 
         // POST api/newsletter
         [HttpPost]
@@ -25,13 +25,8 @@ namespace ModernWallet.Controllers
                 return NotFound(errors);
             }
 
-
-
             EmailSender.SendBeta(_Env, beta);
-
-            var newsletterString = JsonConvert.SerializeObject(beta);
-
-            FileHelper.Save(_Env, "/Storage/Beta/", newsletterString);
+            AzureStorageHelper.Store(beta);
      
             return Ok(ApplicationSettings.Configuration["Email:Messages:Beta"]);
         }

@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ModernWallet.Models;
-using Newtonsoft.Json;
 using Microsoft.AspNetCore.Hosting;
 using System.Linq;
 
@@ -10,7 +9,7 @@ namespace ModernWallet.Controllers
     public class NewsletterController : BaseController
     {
 
-        public NewsletterController(IHostingEnvironment envrnmt):base(envrnmt){}
+        public NewsletterController(IHostingEnvironment envrnmt) :base(envrnmt) {}
 
         // POST api/newsletter
         [HttpPost]
@@ -25,9 +24,7 @@ namespace ModernWallet.Controllers
                 return NotFound(errors);
             }
 
-            var newsletterString = JsonConvert.SerializeObject(newsletter);
-
-            FileHelper.Save(_Env, "/Storage/Newsletters/", newsletterString);
+            AzureStorageHelper.Store(newsletter);
 
             return Ok(ApplicationSettings.Configuration["Email:Messages:Newsletter"]);
         }

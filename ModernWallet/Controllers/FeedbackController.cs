@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ModernWallet.Models;
-using Newtonsoft.Json;
 using Microsoft.AspNetCore.Hosting;
 using System.Linq;
 
@@ -29,10 +28,7 @@ namespace ModernWallet.Controllers
             }
 
             EmailSender.SendFeedback(feedback);
-
-            var feedbackString = JsonConvert.SerializeObject(feedback);
-
-            FileHelper.Save(_Env, "/Storage/Feedbacks/", feedbackString);
+            AzureStorageHelper.Store(feedback);
 
             return Ok(ApplicationSettings.Configuration["Email:Messages:Feedback"]);
         }

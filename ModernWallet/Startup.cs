@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+
 
 namespace ModernWallet
 {
@@ -19,6 +20,8 @@ namespace ModernWallet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            //services.AddScoped<IConversationRepository, ConversationRepository>();
+           // services.AddScoped<INoSQLTableStorage<ConversationEntity>, AzureTableStorage<ConversationEntity>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,5 +37,6 @@ namespace ModernWallet
 
             app.UseMvc();
         }
+
     }
 }

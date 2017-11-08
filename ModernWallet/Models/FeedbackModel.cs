@@ -4,6 +4,11 @@ namespace ModernWallet.Models
 {
     public class FeedbackModel:BaseForm
     {
+        public FeedbackModel()
+        {
+            ConversationTypeDesc = ConversationType.Feedback.ToString();
+        }
+
         [Required]
         public string FirstName { get; set; }
         [Required]
@@ -12,5 +17,6 @@ namespace ModernWallet.Models
         [EmailAddress(ErrorMessage = "Please enter valid e-mail address")]
         public string Email { get; set; }
         public string Message { get; set; }
+        
     }
 }
