@@ -8,8 +8,10 @@ namespace ModernWallet
         public static void Store(ITableEntity conversation)
         {
             CloudTableClient tableClient = new CloudTableClient(
-               new Uri("https://lkedevmain.table.core.windows.net/"),
-               new Microsoft.WindowsAzure.Storage.Auth.StorageCredentials("lkedevmain", "l0W0CaoNiRZQIqJ536sIScSV5fUuQmPYRQYohj/UjO7+ZVdpUiEsRLtQMxD+1szNuAeJ351ndkOsdWFzWBXmdw=="));
+               new Uri(ApplicationSettings.Configuration["Azure:Storage:Uri"]),
+               new Microsoft.WindowsAzure.Storage.Auth.StorageCredentials(
+                   ApplicationSettings.Configuration["Azure:Storage:Credentials:AccountName"],
+                   ApplicationSettings.Configuration["Azure:Storage:Credentials:AccountKey"]));
 
             CloudTable table = tableClient.GetTableReference("Conversation");
             table.CreateIfNotExistsAsync();
