@@ -1,0 +1,8 @@
+/bin
+/obj
+/.idea
+/wwwroot/.vscode
+/wwwroot/node_modules
+/wwwroot/dist
+/.vs
+/.idea
