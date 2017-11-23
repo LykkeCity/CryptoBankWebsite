@@ -1,8 +1,8 @@
-/ModernWallet/bin
-/ModernWallet/obj
-/ModernWallet/.idea
-/ModernWallet/wwwroot/.vscode
-/ModernWallet/wwwroot/node_modules
-/ModernWallet/wwwroot/dist
+/CryptoBank/bin
+/CryptoBank/obj
+/CryptoBank/.idea
+/CryptoBank/wwwroot/.vscode
+/CryptoBank/wwwroot/node_modules
+/CryptoBank/wwwroot/dist
 /.vs
 /.idea

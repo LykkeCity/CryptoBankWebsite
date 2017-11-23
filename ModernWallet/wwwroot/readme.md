@@ -1,1 +1,0 @@
-This is a simple git for the modern wallet landing page for Lykke
