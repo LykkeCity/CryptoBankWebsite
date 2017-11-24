@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using CryptoBank.Infrastructure;
+using Lykke.SettingsReader;
+using Microsoft.Extensions.Configuration;
 using System.IO;
 
 namespace CryptoBank
@@ -6,14 +8,16 @@ namespace CryptoBank
     public static class ApplicationSettings
     {
         public static IConfigurationRoot Configuration { get; set; }
+        public static AppSettings AppSettings { get; set; }
 
         static ApplicationSettings()
         {
             var builder = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json");
-
+                .AddEnvironmentVariables();
+            
             Configuration = builder.Build();
+
+            AppSettings = (Configuration.LoadSettings<AppSettings>()).CurrentValue;
         }
     }
 }

@@ -28,7 +28,7 @@ namespace CryptoBank.Controllers
             EmailSender.SendBeta(_Env, beta);
             AzureStorageHelper.Store(beta);
      
-            return Ok(ApplicationSettings.Configuration["Email:Messages:Beta"]);
+            return Ok(ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Messages.Beta);
         }
     }
 }

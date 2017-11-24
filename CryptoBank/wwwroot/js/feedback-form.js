@@ -8,6 +8,7 @@
             var feedbackForm = $(theform).parents('form');
             var errorLabel = feedbackForm.find('.error');
             var action = feedbackForm.attr('action');
+            theform.disabled = true;
 
             $.ajax({
                 type: "POST",

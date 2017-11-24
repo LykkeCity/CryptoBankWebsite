@@ -30,7 +30,7 @@ namespace CryptoBank.Controllers
             EmailSender.SendFeedback(feedback);
             AzureStorageHelper.Store(feedback);
 
-            return Ok(ApplicationSettings.Configuration["Email:Messages:Feedback"]);
+            return Ok(ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Messages.Feedback);
         }
 
     }

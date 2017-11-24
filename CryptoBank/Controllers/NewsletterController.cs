@@ -26,7 +26,7 @@ namespace CryptoBank.Controllers
 
             AzureStorageHelper.Store(newsletter);
 
-            return Ok(ApplicationSettings.Configuration["Email:Messages:Newsletter"]);
+            return Ok(ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Messages.Newsletter);
         }
     }
 }

@@ -8,10 +8,10 @@ namespace CryptoBank
         public static void Store(ITableEntity conversation)
         {
             CloudTableClient tableClient = new CloudTableClient(
-               new Uri(ApplicationSettings.Configuration["Azure:Storage:Uri"]),
+               new Uri(ApplicationSettings.AppSettings.CryptoBankWebsite.AzureStorage.Uri),
                new Microsoft.WindowsAzure.Storage.Auth.StorageCredentials(
-                   ApplicationSettings.Configuration["Azure:Storage:Credentials:AccountName"],
-                   ApplicationSettings.Configuration["Azure:Storage:Credentials:AccountKey"]));
+                   ApplicationSettings.AppSettings.CryptoBankWebsite.AzureStorage.AccountName,
+                   ApplicationSettings.AppSettings.CryptoBankWebsite.AzureStorage.AccountKey));
 
             CloudTable table = tableClient.GetTableReference("Conversation");
             table.CreateIfNotExistsAsync();
